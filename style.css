@@ -218,6 +218,7 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3em;
 }
 
 .servicesHeader {
@@ -260,7 +261,9 @@ span {
     height: 13rem;
     text-align: center;
 }
-
+.ourPartners h1{
+    font: normal normal 700 50px/1.5em sans-serif;
+}
 .partners {
     padding: 3em 0 1em 0;
     display: flex;
