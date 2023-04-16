@@ -5,9 +5,17 @@
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
-@keyframes borderColor{
-    from{border-color: rgb(20, 33, 61);color:rgb(20, 33, 61) ;}
-    to{border-color: #FCA311;color: white;}
+
+@keyframes borderColor {
+    from {
+        border-color: rgb(20, 33, 61);
+        color: rgb(20, 33, 61);
+    }
+
+    to {
+        border-color: #FCA311;
+        color: white;
+    }
 }
 
 a {
@@ -25,15 +33,6 @@ a:active {
 span {
     font-weight: 600;
     color: #FCA311;
-}
-
-.container {
-    background-image: url(images/cover1.jpg);
-    background-repeat: no-repeat;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .top {
@@ -112,7 +111,7 @@ span {
 }
 
 .gridContainer {
-    position:relative;
+    position: relative;
     display: grid;
     grid-template-columns: 23em 20em 14em 20em 23em;
     grid-template-rows: 5em 5em 8em 8em 6em 15em;
