@@ -112,9 +112,10 @@ span {
 }
 
 .gridContainer {
+    position:relative;
     display: grid;
-    grid-template-columns: 7em 20em 17em 17em 17em;
-    grid-template-rows: 5em 10em 5em 17em 10em 10em;
+    grid-template-columns: 23em 20em 14em 20em 23em;
+    grid-template-rows: 5em 5em 8em 8em 6em 15em;
 }
 
 .gridItem {
@@ -165,9 +166,9 @@ span {
 }
 
 .item6 {
+    padding: 2.6em 0;
     font-size: 20pt;
     align-self: center;
-    padding: 4.4em 0;
     border-top: 5px #FCA311 solid;
     border-bottom: 5px #FCA311 solid;
     grid-column: 3;
