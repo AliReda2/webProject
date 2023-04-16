@@ -5,6 +5,10 @@
     font-family: sans-serif;
     scroll-behavior: smooth;
 }
+@keyframes borderColor{
+    from{border-color: rgb(20, 33, 61);color:rgb(20, 33, 61) ;}
+    to{border-color: #FCA311;color: white;}
+}
 
 a {
     text-decoration: none;
@@ -114,6 +118,8 @@ span {
 }
 
 .gridItem {
+    animation-name: borderColor;
+    animation-duration: 6s;
     text-align: center;
     padding: 10px;
 }
