@@ -110,7 +110,7 @@ span {
 .gridContainer {
     display: grid;
     grid-template-columns: 7em 20em 17em 17em 17em;
-    grid-template-rows: 10em 5em 17em 10em 10em;
+    grid-template-rows: 5em 10em 5em 17em 10em 10em;
 }
 
 .gridItem {
@@ -118,39 +118,44 @@ span {
     padding: 10px;
 }
 
+.itemx {
+    grid-column: 1/span 5;
+    grid-row: 1;
+}
+
 .item1 {
     grid-column: 1;
-    grid-row: 1/span 5;
+    grid-row: 2/span 5;
 }
 
 .item2 {
     font: normal normal 500 50px/1.4em sans-serif;
     align-self: center;
     grid-column: 2/span 2;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .item3 {
     border-left: 5px #FCA311 solid;
     grid-column: 4;
-    grid-row: 1;
+    grid-row: 2;
 }
 
 .item4 {
     grid-column: 5;
-    grid-row: 1/span 5;
+    grid-row: 2/span 5;
 }
 
 .item5 {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .item11 {
     border-right: 5px #FCA311 solid;
     border-bottom: 5px #FCA311 solid;
     grid-column: 2;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .item6 {
@@ -160,7 +165,7 @@ span {
     border-top: 5px #FCA311 solid;
     border-bottom: 5px #FCA311 solid;
     grid-column: 3;
-    grid-row: 2/span 2;
+    grid-row: 3/span 2;
 }
 
 .item7 {
@@ -169,32 +174,32 @@ span {
     border-top: 5px #FCA311 solid;
     border-left: 5px #FCA311 solid;
     grid-column: 4;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .item12 {
     padding: 0.4 1em;
     text-align: start;
     grid-column: 4;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 .item8 {
     text-align: start;
     border-right: 5px #FCA311 solid;
     grid-column: 2;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 .item9 {
     font: normal normal 500 50px/1.4em sans-serif;
     grid-column: 3/span 2;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 .item10 {
     grid-column: 2/span 3;
-    grid-row: 5;
+    grid-row: 6;
 }
 
 .catcher {
@@ -261,9 +266,11 @@ span {
     height: 13rem;
     text-align: center;
 }
-.ourPartners h1{
+
+.ourPartners h1 {
     font: normal normal 700 50px/1.5em sans-serif;
 }
+
 .partners {
     padding: 3em 0 1em 0;
     display: flex;
@@ -293,11 +300,13 @@ footer {
     justify-content: flex-end;
     background-color: rgb(20, 33, 61);
 }
-footer h1{
-    padding:4em 0em 1em 0em ;
+
+footer h1 {
+    padding: 4em 0em 1em 0em;
 }
-.botton input{
-    padding:0.7em 2em;
+
+.botton input {
+    padding: 0.7em 2em;
     color: black;
     border-radius: 7px;
     margin-bottom: 1em;
@@ -305,10 +314,11 @@ footer h1{
     font-weight: 600;
     background-color: #FCA311;
 }
-.footer{
+
+.footer {
     padding: 3em 0;
     width: 100%;
-    font:normal normal 700 20px/1.4em small-caps;
+    font: normal normal 700 20px/1.4em small-caps;
     text-align: center;
     background-color: black;
     color: #FCA311;
