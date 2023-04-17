@@ -6,6 +6,14 @@
     scroll-behavior: smooth;
 }
 
+.closebtn {
+    display: none;
+}
+
+.openNav {
+    display: none;
+}
+
 @keyframes borderColor {
     from {
         border-color: rgb(20, 33, 61);
@@ -17,9 +25,7 @@
         color: white;
     }
 }
-body{
-    width: 100%;
-}
+
 a {
     text-decoration: none;
 }
