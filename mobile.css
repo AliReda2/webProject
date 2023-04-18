@@ -98,8 +98,8 @@
     .gridContainer {
         position: relative;
         display: grid;
-        grid-template-columns: 0vw 33vw 33vw 33vw 0vw;
-        grid-template-rows: 14vw 20vw 30vw 30vw 20vw 45vw;
+        grid-template-columns: 0vw 36vw 27vw 36vw 0vw;
+        grid-template-rows: 14vw 20vw 31vw 31vw 35vw 35vw;
     }
 
     .gridItem {
@@ -150,8 +150,8 @@
     }
 
     .item6 {
-        padding: 5.4em 0;
-        font-size: 12pt;
+        padding: 23.3vw 0;
+        font-size: 3vw;
         align-self: center;
         border-top: 5px #FCA311 solid;
         border-bottom: 5px #FCA311 solid;
@@ -182,6 +182,8 @@
     }
 
     .item9 {
+        display: flex;
+        align-items: center;
         font: normal normal 500 30px/1em sans-serif;
         grid-column: 3/span 2;
         grid-row: 5;
@@ -227,29 +229,30 @@
     }
 
     .services {
+        align-items: start;
+        justify-items: center;
         display: grid;
         gap: 1em;
-        align-items: start;
         grid-template-columns: 29vw 29vw 29vw;
-        grid-template-rows: 12em 12em;
+        grid-template-rows: 13em 13em;
     }
 
     .common {
-        border-radius: 70px;
+        border-radius: 60px;
         background-color: rgb(255, 255, 255);
         text-align: center;
     }
 
     .common h1 {
-        padding: 1em;
+        padding: 1em 0;
         color: #FCA311;
     }
 
     .common img {
         width: 100%;
         height: 6.4em;
-        border-bottom-left-radius: 50px;
-        border-bottom-right-radius: 50px;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
     }
 
 
