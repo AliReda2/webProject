@@ -53,7 +53,7 @@
 
     .header h1 {
         font-weight: 300;
-        font-size: 40pt;
+        font-size: 10vw;
         padding-bottom: 1rem;
     }
 
@@ -280,7 +280,7 @@
 
     .partners h1 {
         padding: 1em;
-        border-right: 5px solid #FCA311;
+        border-bottom: 5px solid #FCA311;
     }
 
     .logos {
