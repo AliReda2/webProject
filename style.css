@@ -2,8 +2,8 @@
     margin: 0;
     padding: 0;
     color: white;
-    font-family: sans-serif;
     scroll-behavior: smooth;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 
 @media screen and (min-width:1095px) {
@@ -47,12 +47,15 @@
         background-color: rgb(20, 33, 61);
         position: relative;
         display: flex;
-        padding: 4rem 6rem;
+        padding: 4vw 11vw;
     }
 
-    .navBar div:nth-child(1) {
+    .navBar .closebtn {
+        display: none;
+    }
+
+    .navBar div:nth-child(2) {
         flex-grow: 1;
-        padding-left: 5em;
     }
 
     .navBar div {
@@ -78,6 +81,8 @@
     }
 
     .header p {
+        font-size: 17px;
+        text-align: justify;
         letter-spacing: 1px;
         word-spacing: 2px;
     }
@@ -99,7 +104,9 @@
     }
 
     .persentages div h1 {
-        font: normal normal 600 90px/1.1em sans-serif;
+        font-size: 90px;
+        line-height: 1.1em;
+        font-weight: 600;
         color: #FCA311;
     }
 
@@ -118,8 +125,8 @@
     .gridContainer {
         position: relative;
         display: grid;
-        grid-template-columns: 0vw 25vw 15vw 25vw 0vw;
-        grid-template-rows: 5em 5em 8em 8em 6em 7em;
+        grid-template-columns: 0vw 21em 17em 21em 5vw;
+        grid-template-rows: 6em 6em 12em 12em 11em 11em;
     }
 
     .gridItem {
@@ -140,7 +147,12 @@
     }
 
     .item2 {
-        font: normal normal 500 50px/1.4em sans-serif;
+        font-size: 50px;
+        line-height: 1.4em;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 1.4em;
+        font-weight: 500;
         align-self: center;
         grid-column: 2/span 2;
         grid-row: 2;
@@ -170,8 +182,8 @@
     }
 
     .item6 {
-        padding: 4.1em 0;
-        font-size: 15pt;
+        padding: 4.7em 0;
+        font-size: 20pt;
         align-self: center;
         border-top: 5px #FCA311 solid;
         border-bottom: 5px #FCA311 solid;
@@ -179,8 +191,15 @@
         grid-row: 3/span 2;
     }
 
+    .item6 h1,
+    h2 {
+        font-weight: 500;
+    }
+
     .item7 {
-        text-align: start;
+        font-size: 17px;
+        line-height: 1.4em;
+        text-align: justify;
         border-top: 5px #FCA311 solid;
         border-left: 5px #FCA311 solid;
         grid-column: 4;
@@ -195,14 +214,21 @@
     }
 
     .item8 {
-        text-align: start;
+        font-size: 17px;
+        line-height: 1.4em;
+        text-align: justify;
         border-right: 5px #FCA311 solid;
         grid-column: 2;
         grid-row: 5;
     }
 
     .item9 {
-        font: normal normal 500 50px/1.4em sans-serif;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 50px;
+        line-height: 1.4em;
+        font-weight: 500;
         grid-column: 3/span 2;
         grid-row: 5;
     }
@@ -242,7 +268,9 @@
     }
 
     .servicesHeader h1 {
-        font: normal normal 700 50px/1.5em sans-serif;
+        font-size: 50px;
+        line-height: 1.5em;
+        font-weight: 700;
         color: #FCA311;
     }
 
@@ -297,7 +325,9 @@
     }
 
     .ourPartners h1 {
-        font: normal normal 700 50px/1.5em sans-serif;
+        font-size: 50px;
+        line-height: 1.5em;
+        font-weight: 700;
     }
 
     .partners {
