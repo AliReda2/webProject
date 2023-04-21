@@ -23,11 +23,15 @@
 
     .navBar {
         text-align: center;
-        background-color: rgb(20, 33, 61);
+        background-color: black;
         position: relative;
         display: flex;
         flex-direction: column;
         padding: 2rem 4rem;
+    }
+
+    .navBar .closebtn {
+        display: none;
     }
 
     .navBar div {
@@ -37,13 +41,15 @@
 
     .header {
         padding-bottom: 2rem;
-        background-color: rgb(20, 33, 61);
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .header .head {
+        background-color: rgb(20, 33, 61);
+        position: relative;
+        bottom: 20px;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -67,6 +73,7 @@
     }
 
     .persentages {
+        background-color: black;
         display: grid;
         grid-auto-flow: row;
         grid-template-columns: 100%;
@@ -83,22 +90,23 @@
     }
 
     .persentages p {
-        color: black;
-        font-weight: 900;
+        color: white;
+        font-weight: 500;
+        padding: 0 6em;
     }
 
     .container2 {
         display: flex;
         justify-content: center;
-        background-color: rgb(20, 33, 61);
+        background-color: black;
         width: 100%;
     }
 
     .gridContainer {
         position: relative;
         display: grid;
-        grid-template-columns: 0vw 36vw 27vw 36vw 0vw;
-        grid-template-rows: 14vw 20vw 31vw 31vw 35vw 35vw;
+        grid-template-columns: 10vw 16vw 12vw 60vw;
+        grid-template-rows: 5em 6em 22em 6em 17em;
     }
 
     .gridItem {
@@ -109,88 +117,93 @@
     }
 
     .itemx {
-        grid-column: 1/span 5;
+        grid-column: 1/span 4;
         grid-row: 1;
     }
 
     .item1 {
         grid-column: 1;
-        grid-row: 2/span 5;
+        grid-row: 2/span 2;
     }
 
     .item2 {
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
         font: normal normal 500 30px/1em sans-serif;
-        align-self: center;
-        grid-column: 2/span 2;
-        grid-row: 2;
+        align-self: baseline;
+        padding: 1em 0em 2em 0.5em;
+        grid-column: 2;
+        grid-row: 3;
+        border-left: 5px #FCA311 solid;
     }
 
     .item3 {
-        border-left: 5px #FCA311 solid;
+        display: none;
+    }
+
+    .item4 {
+        display: none;
+    }
+
+    .item5 {
         grid-column: 4;
         grid-row: 2;
     }
 
-    .item4 {
-        grid-column: 5;
-        grid-row: 2/span 5;
-    }
-
-    .item5 {
-        grid-column: 2;
-        grid-row: 3;
-    }
-
     .item11 {
-        border-right: 5px #FCA311 solid;
-        border-bottom: 5px #FCA311 solid;
-        grid-column: 2;
-        grid-row: 4;
+        display: none;
     }
 
     .item6 {
-        padding: 23.3vw 0;
-        font-size: 3vw;
+        background-color: #FCA311;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 5vw;
         align-self: center;
-        border-top: 5px #FCA311 solid;
-        border-bottom: 5px #FCA311 solid;
-        grid-column: 3;
-        grid-row: 3/span 2;
+        grid-column: 1/span 3;
+        grid-row: 2;
+    }
+
+    .item6 h1 {
+        color: black;
+    }
+
+    .item6 h2 {
+        color: black;
+        text-decoration: underline;
     }
 
     .item7 {
-        text-align: start;
-        border-top: 5px #FCA311 solid;
-        border-left: 5px #FCA311 solid;
-        grid-column: 4;
+        padding: 1.5em 0em 0em 1em;
+        text-align: justify;
+        grid-column: 3/span 2;
         grid-row: 3;
     }
 
     .item12 {
-        padding: 0.4 1em;
-        text-align: start;
-        grid-column: 4;
-        grid-row: 4;
+        display: none;
     }
 
     .item8 {
-        text-align: start;
-        border-right: 5px #FCA311 solid;
-        grid-column: 2;
+        text-align: justify;
+        grid-column: 1/span 4;
         grid-row: 5;
     }
 
     .item9 {
+        border-top: 5px #FCA311 solid;
+        justify-content: flex-start;
         display: flex;
         align-items: center;
         font: normal normal 500 30px/1em sans-serif;
-        grid-column: 3/span 2;
-        grid-row: 5;
+        grid-column: 2/span 4;
+        grid-row: 4;
+        word-spacing: 2vw;
     }
 
     .item10 {
-        grid-column: 2/span 3;
-        grid-row: 6;
+        display: none;
     }
 
     .catcher {
@@ -210,7 +223,7 @@
     }
 
     .serviceContainer {
-        background-color: rgb(20, 33, 61);
+        background-color: black;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -232,7 +245,7 @@
         display: grid;
         gap: 1em;
         grid-template-columns: 29vw 29vw 29vw;
-        grid-template-rows: 13em 13em;
+        grid-template-rows: 14em 14em;
     }
 
     .common {
@@ -248,7 +261,7 @@
 
     .common img {
         width: 100%;
-        height: 30vw;
+        height: 8em;
         border-bottom-left-radius: 50px;
         border-bottom-right-radius: 50px;
     }
@@ -272,13 +285,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         background-color: rgb(20, 33, 61);
     }
 
     .partners h1 {
-        padding: 1em;
-        border-bottom: 5px solid #FCA311;
+        color: #FCA311;
+        padding: 1em 5.5em 1em 0.5em;
+        border-bottom: 5px solid white;
     }
 
     .logos {
@@ -296,11 +310,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
-        background-color: rgb(20, 33, 61);
+        background-color: black;
     }
 
     footer h1 {
-        padding: 4em 0em 1em 0em;
+        padding: 4em 0.5em 1em 0.5em;
     }
 
     .botton input {
