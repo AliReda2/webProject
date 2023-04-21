@@ -3,56 +3,41 @@
         text-decoration: none;
     }
 
-    a:hover {
-        color: #FCA311;
-    }
-
-    a:active {
-        color: rgb(255, 238, 0);
-    }
-
     span {
         font-weight: 600;
         color: #FCA311;
     }
-.logo{
-    position: fixed;
-    top: 15px;
-    left: 80vw;
-}
-    .openNav {
-        padding: 1em;
-        background-color: rgb(20, 33, 61);
-    }
+
+    /* .openNav {} */
 
     .container {
         display: flex;
         flex-direction: column;
     }
 
-    .navBar {
-        height: 100%;
-        /* 100% Full-height */
-        width: 0;
-        /* 0 width - change this with JavaScript */
-        position: fixed;
-        /* Stay in place */
-        z-index: 1;
-        /* Stay on top */
-        top: 0;
-        /* Stay at the top */
-        left: 0;
-        background-color: #111;
-        /* Black*/
-        overflow-x: hidden;
-        /* Disable horizontal scroll */
-        padding-top: 60px;
-        /* Place content 60px from the top */
-        transition: 0.5s;
-        /* 0.5 second transition effect to slide in the sidenav */
+    .navBar0 {
+        background-color: rgb(20, 33, 61);
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 1em;
     }
 
-    /* The navigation menu links */
+    .navBar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
+    }
+
     .navBar a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
@@ -62,12 +47,6 @@
         transition: 0.3s;
     }
 
-    /* When you mouse over the navigation links, change their color */
-    .navBar a:hover {
-        color: #f1f1f1;
-    }
-
-    /* Position and style the close button (top right corner) */
     .navBar .closebtn {
         position: absolute;
         top: 0;
@@ -76,7 +55,6 @@
         margin-left: 50px;
     }
 
-    /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
     #main {
         transition: margin-left .5s;
     }
