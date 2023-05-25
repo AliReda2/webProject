@@ -1,4 +1,14 @@
 @media only screen and (max-width:1095px) {
+    .divider:after,
+    .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+    }
+    .openNav{
+        padding: 5px;
+    }
     a {
         text-decoration: none;
     }
