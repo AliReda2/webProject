@@ -14,16 +14,19 @@
         flex-wrap: wrap;
         margin-top: calc(-1 * var(--bs-gutter-y));
     }
+
     .mb-4 {
         margin: 1.5rem !important;
     }
 
     a {
         text-decoration: none;
+        padding: 0 3vw;
     }
 
     a:hover {
         color: #FCA311;
+        background-color: rgb(135, 135, 255);
     }
 
     span {
@@ -45,17 +48,14 @@
     }
 
     .navBar0 {
-        background-color: rgb(20, 33, 61);
         position: relative;
         display: flex;
-        padding: 4vw 11vw;
+        padding: 2vw 10vw;
     }
 
     .navBar {
-        background-color: rgb(20, 33, 61);
         position: relative;
         display: flex;
-        padding: 4vw 11vw;
     }
 
     .navBar .closebtn {
@@ -71,17 +71,14 @@
     }
 
     .navBar0 div {
-        padding: 0 1rem 0 1rem;
         font: normal normal 600 20px/1.4em sans-serif;
     }
 
     .navBar div {
-        padding: 0 1rem 0 1rem;
         font: normal normal 600 20px/1.4em sans-serif;
     }
 
     .header {
-        background-color: rgb(20, 33, 61);
         position: relative;
         padding: 1rem 0;
         display: grid;
@@ -118,18 +115,6 @@
         justify-content: space-evenly;
         height: 20rem;
         text-align: center;
-    }
-
-    .persentages div h1 {
-        font-size: 90px;
-        line-height: 1.1em;
-        font-weight: 600;
-        color: #FCA311;
-    }
-
-    .persentages p {
-        color: white;
-        font-weight: 900;
     }
 
     .container2 {
@@ -255,22 +240,6 @@
         grid-row: 6;
     }
 
-    .catcher {
-        display: flex;
-        height: 15em;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .catcher h1 {
-        color: white;
-    }
-
-    .catcher h2 {
-        color: #FCA311;
-    }
-
     .serviceContainer {
         background-color: rgb(20, 33, 61);
         display: flex;
@@ -332,71 +301,13 @@
         border-bottom-right-radius: 10px;
     }
 
-    .ourPartners {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 13rem;
-        text-align: center;
-    }
-
-    .ourPartners h1 {
-        font-size: 50px;
-        line-height: 1.5em;
-        font-weight: 700;
-    }
-
-    .partners {
-        padding: 3em 0 1em 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(20, 33, 61);
-    }
-
-    .partners h1 {
-        padding: 1em;
-        border-right: 5px solid #FCA311;
-    }
-
-    .logos {
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        grid-template-columns: 7em 7em 7em;
-        grid-template-rows: 4em 4em;
-    }
-
-    footer {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-end;
-        background-color: rgb(20, 33, 61);
-    }
-
-    footer h1 {
-        padding: 4em 0em 1em 0em;
-    }
-
-    .botton input {
-        padding: 0.7em 2em;
-        color: black;
-        border-radius: 7px;
-        margin-bottom: 1em;
-        font-size: large;
-        font-weight: 600;
-        background-color: #FCA311;
-    }
-
     .footer {
-        padding: 3em 0;
+        padding: 3vh 0;
         width: 100%;
+        position: relative;
+        top: 32vh;
         font: normal normal 700 20px/1.4em small-caps;
         text-align: center;
-        background-color: black;
         color: #FCA311;
     }
 }
