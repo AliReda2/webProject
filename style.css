@@ -10,7 +10,7 @@
     .backgroundImage {
         position: absolute;
         background-repeat: no-repeat;
-        height: 50vw;
+        height: 90vh;
         width: 100%;
         background-size: cover;
         background-attachment: fixed;
@@ -37,14 +37,18 @@
 
     a {
         text-decoration: none;
-        padding: 1vw 2vw;
     }
 
     a:hover {
         transition: 0.36s;
         color: #ff4a52;
     }
-
+    .popular div a img:hover{
+        border-radius: 30px;
+        padding-top: 0;
+        padding-bottom: 0.1em;
+        transition: 0.6s;
+    }
     span {
         font-weight: 600;
         color: #ff4a52;
@@ -73,6 +77,10 @@
     .navBar {
         position: relative;
         display: flex;
+    }
+
+    .navBar a {
+        padding: 1vw 2vw;
     }
 
     .navBar .closebtn {
@@ -164,13 +172,16 @@
     }
 
     .popular {
-        top: 10vw;
+        height: 60vh;
+        top: 20vh;
         align-items: center;
         position: relative;
         display: flex;
         flex-direction: column;
     }
-
+    .popular h1{
+        padding-bottom: 2em;
+    }
     .popular div {
         display: flex;
         flex-direction: row;
@@ -179,6 +190,45 @@
     .popular div img {
         width: 20vw;
         border-radius: 30px;
-        padding: 0 10px;
+        padding: 1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        top: 15em;
+        background-color: black;
+        color: white;
+    }
+
+    footer div {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer div div {
+        padding: 1em 3em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div div img {
+        width: 7em;
+    }
+
+    .recentTrips {
+        display: grid;
+        grid-template-columns: 7em 7em 7em;
+        grid-template-rows: 8em 8em;
+    }
+
+    .recentTrips img {
+        width: 6em;
+        border-radius: 1em;
     }
 }
