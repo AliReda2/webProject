@@ -10,7 +10,7 @@
     .backgroundImage {
         position: absolute;
         background-repeat: no-repeat;
-        height: 100%;
+        height: 50vw;
         width: 100%;
         background-size: cover;
         background-attachment: fixed;
@@ -171,5 +171,18 @@
 
     .inputForms input[type=text] {
         border: 1px solid #e8e8e8;
+    }
+
+    .popular {
+        top: 10vw;
+        align-items: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular div {
+        display: grid;
+        grid-auto-flow: column;
     }
 }
