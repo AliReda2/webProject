@@ -43,12 +43,14 @@
         transition: 0.36s;
         color: #ff4a52;
     }
-    .popular div a img:hover{
+
+    .popular div a img:hover {
         border-radius: 30px;
         padding-top: 0;
         padding-bottom: 0.1em;
         transition: 0.6s;
     }
+
     span {
         font-weight: 600;
         color: #ff4a52;
@@ -179,9 +181,11 @@
         display: flex;
         flex-direction: column;
     }
-    .popular h1{
+
+    .popular h1 {
         padding-bottom: 2em;
     }
+
     .popular div {
         display: flex;
         flex-direction: row;
