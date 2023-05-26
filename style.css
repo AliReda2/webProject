@@ -128,16 +128,6 @@
         word-spacing: 2px;
     }
 
-    .footer {
-        padding: 3vh 0;
-        width: 100%;
-        position: fixed;
-        bottom: 0;
-        font: normal normal 700 20px/1.4em small-caps;
-        text-align: center;
-        color: #FCA311;
-    }
-
     .inputForms {
         display: grid;
         grid-auto-flow: column;
@@ -182,7 +172,13 @@
     }
 
     .popular div {
-        display: grid;
-        grid-auto-flow: column;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .popular div img {
+        width: 20vw;
+        border-radius: 30px;
+        padding: 0 10px;
     }
 }
