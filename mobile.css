@@ -11,6 +11,13 @@
     }
     a {
         text-decoration: none;
+        padding: 1vw 2vw;
+    }
+
+    a:hover {
+        transition: 0.36s;
+        color: #FCA311;
+        background-color: lightblue;
     }
 
     span {
@@ -18,7 +25,13 @@
         color: #FCA311;
     }
 
-    /* .openNav {} */
+    .divider:after,
+    .divider:before {
+        content: "";
+        flex: 1;
+        height: 1px;
+        background: #eee;
+    }
 
     .container {
         display: flex;
@@ -60,16 +73,22 @@
         position: relative;
         padding: 1rem 0;
         display: grid;
-        grid-template-columns: 40% 40%;
-        grid-auto-flow: column;
-        justify-content: space-evenly;
-        align-items: stretch;
+        grid-template-rows: 11vw 7vw 14vw;
+        grid-template-columns: 100vw;
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
     }
 
     .header h1 {
+        text-align: center;
         font-weight: 300;
-        font-size: 40pt;
+        font-size: 30pt;
         padding-bottom: 1rem;
+    }
+
+    .header h2 {
+        text-align: center;
     }
 
     .header p {
@@ -77,22 +96,6 @@
         text-align: justify;
         letter-spacing: 1px;
         word-spacing: 2px;
-    }
-
-    .header img {
-        width: 100%;
-        height: auto;
-    }
-
-    .persentages {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: 16% 16%;
-        justify-items: center;
-        align-items: center;
-        justify-content: space-evenly;
-        height: 20rem;
-        text-align: center;
     }
 
     .container2 {
@@ -282,10 +285,33 @@
     .footer {
         padding: 3vh 0;
         width: 100%;
-        position: relative;
-        top: 32vh;
+        position: fixed;
+        bottom: 0;
         font: normal normal 700 20px/1.4em small-caps;
         text-align: center;
         color: #FCA311;
+    }
+
+    .inputForms {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 26vw 20vw 26vw;
+        justify-items: center;
+    }
+
+    .inputForms input,
+    select {
+        width: 20vw;
+        height: 4vw;
+        color: gray;
+        border-radius: 6px;
+    }
+
+    .inputForms input[type=button] {
+        border-radius: 30px;
+        background-color: #FCA311;
+        color: antiquewhite;
+        font-weight: 700;
+        font-size: large;
     }
 }
