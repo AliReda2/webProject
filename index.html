@@ -29,31 +29,31 @@
       <h1><span>Where do you want to go?</span></h1>
       <h3>Fill out this form</h3>
       <div class="inputForms">
-        <input type="text" placeholder="Destination,city">
-        <select>
-          <option value="default">Any Month</option>
-          <option value="anyMonth">January</option>
-          <option value="anyMonth">February</option>
-          <option value="anyMonth">march</option>
-          <option value="anyMonth">April</option>
-          <option value="anyMonth">May</option>
-          <option value="anyMonth">June</option>
-          <option value="anyMonth">July</option>
-          <option value="anyMonth">August</option>
-          <option value="anyMonth">September</option>
-          <option value="anyMonth">October</option>
-          <option value="anyMonth">November</option>
-          <option value="anyMonth">December</option>
+        <input id="city" type="text" placeholder="Destination,city">
+        <select >
+          <option id="month" value="default">Any Month</option>
+          <option id="month" value="anyMonth">January</option>
+          <option id="month" value="anyMonth">February</option>
+          <option id="month" value="anyMonth">march</option>
+          <option id="month" value="anyMonth">April</option>
+          <option id="month" value="anyMonth">May</option>
+          <option id="month" value="anyMonth">June</option>
+          <option id="month" value="anyMonth">July</option>
+          <option id="month" value="anyMonth">August</option>
+          <option id="month" value="anyMonth">September</option>
+          <option id="month" value="anyMonth">October</option>
+          <option id="month" value="anyMonth">November</option>
+          <option id="month" value="anyMonth">December</option>
         </select>
-        <input type="button" value="search">
+        <input onclick="search()" type="button" value="search">
       </div>
     </div>
     <div class="popular">
       <h1 style="color: black; height: 10vw;">Popular Destinations</h1>
-      <div><a href=""><img src="/webProject/images/popular1.jpg" ></a>
-        <a href=""><img src="/webProject/images/popular2.jpg"></a>
-        <a href=""><img src="/webProject/images/popular3.jpg"></a>
-        <a href=""><img src="/webProject/images/p.jpg"></a>
+      <div class="options"><a id="japan" href="/webProject/japan.html"><img src="/webProject/images/popular1.jpg" ></a>
+        <a id="venice" href="/webProject/venice.html"><img src="/webProject/images/popular2.jpg"></a>
+        <a id="france" href="/webProject/france.html"><img src="/webProject/images/popular3.jpg"></a>
+        <a id="london" href="/webProject/london.html"><img src="/webProject/images/p.jpg"></a>
       </div>
     </div>
     <footer>
@@ -83,7 +83,7 @@
       <div>Copyright &copy; 2018 Mobirise</div>
     </footer>
   </div>
-  <script src="script.js"></script>
+  <script src="/webProject/script.js"></script>
   <script src="https://kit.fontawesome.com/41a5db781c.js" crossorigin="anonymous"></script>
 </body>
 
