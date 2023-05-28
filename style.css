@@ -52,8 +52,7 @@
     } */
 
     span {
-        font-weight: 600;
-        color: #ff4a52;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .divider:after,
@@ -112,7 +111,7 @@
         height: 50vh;
         padding: 1rem 0;
         display: grid;
-        grid-template-rows: 5vw 5vw 10vw;
+        grid-template-rows: 11vw 4vw;
         grid-template-columns: 100vw;
         justify-content: center;
         justify-items: center;
@@ -238,5 +237,33 @@
     .recentTrips img {
         width: 6em;
         border-radius: 1em;
+    }
+
+    .wallpapers {
+        position: relative;
+        display: grid;
+        grid-template-rows: 80vh;
+        grid-template-columns: 40vw 40vw;
+        gap: 20vw;
+        justify-items: center;
+    }
+
+    .wallpapers img {
+        width: 20vw;
+        padding: 1em;
+        opacity: 0;
+    }
+
+    .subwallpapers1 {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 35vh;
+        justify-items: start;
+    }
+    .subwallpapers2 {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 35vh;
+        justify-items: end;
     }
 }

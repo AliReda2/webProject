@@ -66,10 +66,14 @@ function nothovering(elem) {
   elem.style.padding = "1em";
   elem.style.transition = "0.6s";
 }
-
+function fade(this) {
+  alert("hi");
+  this.style.opacity=100;
+  
+}
 (function () { // function expression closure to contain variables
   var i = 0;
-  var pics = ["/webProject/images/popular2.jpg", "/webProject/images/popular3.jpg", "/webProject/images/img1.jpg"];
+  var pics = ["/webProject/images/img2.webp", "/webProject/images/img3.jpg", "/webProject/images/img4.jpg"];
   var el = document.getElementById("pic"); // el doesn't change
   function toggle() {
     el.src = pics[i]; // set the image
@@ -77,3 +81,7 @@ function nothovering(elem) {
   }
   setInterval(toggle, 2000);
 })();
+
+
+
+
