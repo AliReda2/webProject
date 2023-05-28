@@ -11,10 +11,10 @@
 </head>
 
 <body>
-  <img src="/webProject/images/img1.jpg" class="backgroundImage">
+  <img id="pic" onload="toggle()" src="/webProject/images/img1.jpg" class="backgroundImage">
   <div class="navBar0">
     <div class="logo"><img src="/webProject/images/logo.png">Skypiea</div>
-    <div class="navBar" id="mySidenav">
+    <div onload="navbar(this)" class="navBar" id="mySidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div><a href="#">Home</a></div>
       <div><a href="/webProject/contactUs.html">Contact Us</a></div>
@@ -50,10 +50,11 @@
     </div>
     <div class="popular">
       <h1 style="color: black; height: 10vw;">Popular Destinations</h1>
-      <div class="options"><a id="japan" href="/webProject/japan.html"><img src="/webProject/images/popular1.jpg" ></a>
-        <a id="venice" href="/webProject/venice.html"><img src="/webProject/images/popular2.jpg"></a>
-        <a id="france" href="/webProject/france.html"><img src="/webProject/images/popular3.jpg"></a>
-        <a id="london" href="/webProject/london.html"><img src="/webProject/images/p.jpg"></a>
+      <div>
+        <a><img id="hover" onmouseover="hovering(this)" onmouseleave="nothovering(this)" src="/webProject/images/popular1.jpg" ></a>
+        <a><img id="hover" onmouseover="hovering(this)" onmouseleave="nothovering(this)" src="/webProject/images/popular2.jpg"></a>
+        <a><img id="hover" onmouseover="hovering(this)" onmouseleave="nothovering(this)" src="/webProject/images/popular3.jpg"></a>
+        <a><img id="hover" onmouseover="hovering(this)" onmouseleave="nothovering(this)" src="/webProject/images/p.jpg"></a>
       </div>
     </div>
     <footer>

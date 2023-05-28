@@ -56,3 +56,27 @@ function validateForm() {
   }
   document.querySelector('.status').innerHTML = "Sending...";
 }
+function hovering(elem) {
+  // let img=document.getElementById("hover");
+  elem.style.paddingTop = "0";
+  elem.style.paddingBottom = "0.1em";
+  elem.style.transition = "0.6s";
+}
+function nothovering(elem) {
+  // let img=document.getElementById("hover");
+  elem.style.padding = "1em";
+  elem.style.transition = "0.6s";
+}
+function navbar(elem) {
+console.log(elem);
+}
+(function () { // function expression closure to contain variables
+  var i = 0;
+  var pics = ["/webProject/images/popular2.jpg", "/webProject/images/popular3.jpg", "/webProject/images/img1.jpg"];
+  var el = document.getElementById("pic"); // el doesn't change
+  function toggle() {
+    el.src = pics[i]; // set the image
+    i = (i + 1) % pics.length; // update the counter
+  }
+  setInterval(toggle, 2000);
+})();
