@@ -75,6 +75,7 @@
         padding: 2vw 12vw;
         align-items: center;
     }
+
     .navBar {
         position: relative;
         display: flex;
@@ -170,6 +171,10 @@
 
     .inputForms input[type=text] {
         border: 1px solid #e8e8e8;
+    }
+
+    .inputForms select option {
+        color: #565656;
     }
 
     .popular {

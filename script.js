@@ -10,23 +10,22 @@ if (screen.width < 1000) {
   }
 }
 function search() {
-  alert("found");
-  let city = document.getElementById("city");
-  let month = document.getElementById("month");
-  var Array;
-  for (let index = 0; index < document.getElementsByClassName("options").length; index++) {
-    Array[index] = document.getElementsByClassName("options")[index]
-    if (city == Array[index]) {
-      // found name matching search, display it
-      alert("found");
-
-    } else {
-      // no match, don't display name
-      alert("not found");
+  let city = document.getElementById("city").value;
+  let month = document.getElementById("month").value;;
+    if (city == "tokyo") {
+      location.href="/webProject/tokyo.html";
+    } else if(city=="soel") {
+      location.href="/webProject/soel.html";
+    }else if(city=="paris") {
+      location.href="/webProject/paris.html";
+    }else if(city=="london") {
+      location.href="/webProject/london.html";
     }
-
+    else{
+      alert("not available");
+    }
+    
   }
-}
 function validateForm() {
   var name = document.getElementById('name').value;
   if (name == "") {
@@ -67,9 +66,7 @@ function nothovering(elem) {
   elem.style.padding = "1em";
   elem.style.transition = "0.6s";
 }
-function navbar(elem) {
-console.log(elem);
-}
+
 (function () { // function expression closure to contain variables
   var i = 0;
   var pics = ["/webProject/images/popular2.jpg", "/webProject/images/popular3.jpg", "/webProject/images/img1.jpg"];
