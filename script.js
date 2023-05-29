@@ -9,6 +9,18 @@ if (screen.width < 1000) {
     document.getElementById("mySidenav").style.width = "0";
   }
 }
+if (screen.width > 1000) {
+  function hovering(elem) {
+    elem.style.paddingTop = "0";
+    elem.style.paddingBottom = "0.1em";
+    elem.style.transition = "0.6s";
+  }
+  function nothovering(elem) {
+    elem.style.padding = "1em";
+    elem.style.transition = "0.6s";
+  }
+}
+
 function search() {
   let city = document.getElementById("city").value;
   let month = document.getElementById("month").value;;
@@ -26,15 +38,7 @@ function search() {
   }
 
 }
-function hovering(elem) {
-  elem.style.paddingTop = "0";
-  elem.style.paddingBottom = "0.1em";
-  elem.style.transition = "0.6s";
-}
-function nothovering(elem) {
-  elem.style.padding = "1em";
-  elem.style.transition = "0.6s";
-}
+
 (function () { // function expression closure to contain variables
   var i = 0;
   var pics = ["/webProject/images/img2.webp", "/webProject/images/img3.jpg", "/webProject/images/img4.jpg"];
