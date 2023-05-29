@@ -12,64 +12,28 @@ if (screen.width < 1000) {
 function search() {
   let city = document.getElementById("city").value;
   let month = document.getElementById("month").value;;
-    if (city == "tokyo") {
-      location.href="/webProject/tokyo.html";
-    } else if(city=="soel") {
-      location.href="/webProject/soel.html";
-    }else if(city=="paris") {
-      location.href="/webProject/paris.html";
-    }else if(city=="london") {
-      location.href="/webProject/london.html";
-    }
-    else{
-      alert("not available");
-    }
-    
+  if (city == "tokyo") {
+    location.href = "/webProject/tokyo.html";
+  } else if (city == "soel") {
+    location.href = "/webProject/soel.html";
+  } else if (city == "paris") {
+    location.href = "/webProject/paris.html";
+  } else if (city == "london") {
+    location.href = "/webProject/london.html";
   }
-function validateForm() {
-  var name = document.getElementById('name').value;
-  if (name == "") {
-    document.querySelector('.status').innerHTML = "Name cannot be empty";
-    return false;
+  else {
+    alert("not available");
   }
-  var email = document.getElementById('email').value;
-  if (email == "") {
-    document.querySelector('.status').innerHTML = "Email cannot be empty";
-    return false;
-  } else {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if (!re.test(email)) {
-      document.querySelector('.status').innerHTML = "Email format invalid";
-      return false;
-    }
-  }
-  var subject = document.getElementById('subject').value;
-  if (subject == "") {
-    document.querySelector('.status').innerHTML = "Subject cannot be empty";
-    return false;
-  }
-  var message = document.getElementById('message').value;
-  if (message == "") {
-    document.querySelector('.status').innerHTML = "Message cannot be empty";
-    return false;
-  }
-  document.querySelector('.status').innerHTML = "Sending...";
+
 }
 function hovering(elem) {
-  // let img=document.getElementById("hover");
   elem.style.paddingTop = "0";
   elem.style.paddingBottom = "0.1em";
   elem.style.transition = "0.6s";
 }
 function nothovering(elem) {
-  // let img=document.getElementById("hover");
   elem.style.padding = "1em";
   elem.style.transition = "0.6s";
-}
-function fade(this) {
-  alert("hi");
-  this.style.opacity=100;
-  
 }
 (function () { // function expression closure to contain variables
   var i = 0;
