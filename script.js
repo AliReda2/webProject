@@ -25,7 +25,7 @@ if (screen.width > 1000) {
     function toggle() {
       el.src = pics[i];
       i = (i + 1) % pics.length;
-      opacity=0.4;
+      opacity = 0.4;
       fadeIn();
     }
     setInterval(toggle, 2000);
@@ -45,13 +45,9 @@ if (screen.width > 1000) {
   function nothovering(elem) {
     elem.style.padding = "1em";
     elem.style.transition = "0.6s";
-
     var span = elem.nextSibling;
-    span.style.transition = "all 1000ms"
-
-    span.style.bottom = "0"
-    console.log(span)
-
+    span.style.transition = "all 1000ms";
+    span.style.bottom = "0";
   }
 }
 
@@ -72,13 +68,6 @@ function search() {
   }
 
 }
-
-
-
-
-
-
-
 
 let slideIndex = 1;
 showSlides(slideIndex);
@@ -106,3 +95,21 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+function formText(elem) {
+  var span = elem.nextSibling;
+  span.style.transition = "all 500ms";
+  elem.style.transition = "all 500ms";
+  span.style.bottom = "5em";
+  elem.style.backgroundColor="white";
+}
+function checkNull(elem) {
+  var span = elem.nextSibling;
+  span.style.transition = "all 500ms";
+  if(elem.value==""){
+    span.style.bottom = "3em";
+    elem.style.backgroundColor="lightgrey";
+  }
+  console.log(elem.value)
+}
+setInterval(checkNull,10);

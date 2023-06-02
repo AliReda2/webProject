@@ -21,9 +21,30 @@
         <span class="openNav" onclick="openNav()"><i class="fa-solid fa-bars fa-xl" style="color: #ff4a52;"></i></span>
     </div>
     <div id="main">
-        <div class="back">
-        <div class="left"></div>
-        <div class="right"></div></div>
+        <div class="form">
+            <h1>Send Us A Message</h1>
+            <div class="info"></div>
+            <div class="inputs">
+                <div style="position: relative;" id="item1"><input type="text" onclick="formText(this)"
+                        onpointerleave="checkNull(this)"><span class="hoverText">First Name</span></div>
+                <div style="position: relative;" id="item2"><input type="text" onclick="formText(this)"
+                        onpointerleave="checkNull(this)"><span class="hoverText">Last Name</span></div>
+                <div style="position: relative;" id="item3"><input type="email" onclick="formText(this)"
+                        onpointerleave="checkNull(this)"><span class="hoverText">Email</span></div>
+                <div style="position: relative;" id="item4"><input type="tel" onclick="formText(this)"
+                        onpointerleave="checkNull(this)"><span class="hoverText">Phone Number</span></div>
+                <div style="position: relative;" id="item5"><input type="text" onclick="formText(this)"
+                        onpointerleave="checkNull(this)"><span class="hoverText">Message</span></div>
+                <input type="button" value="send" id="send">
+            </div>
+        </div>
+        <div class="back0">
+            <div class="center"></div>
+            <div class="back">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </div>
     </div>
 
     <script src="/webProject/script.js"></script>

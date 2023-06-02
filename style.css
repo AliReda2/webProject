@@ -124,7 +124,7 @@
         opacity: 0;
         color: white;
         transition: 1000ms all;
-        z-index: 10000;
+        z-index: 10;
     }
 
     .backgroundImage {
@@ -172,7 +172,8 @@
     .navBar0 {
         position: relative;
         display: flex;
-        padding: 2vw 12vw;
+        height: 15vh;
+        padding: 0 12vw;
         align-items: center;
     }
 
@@ -209,7 +210,7 @@
 
     .header {
         position: relative;
-        height: 50vh;
+        height: 70vh;
         padding: 1rem 0;
         display: grid;
         grid-template-rows: 11vw 4vw;
@@ -279,7 +280,7 @@
 
     .popular {
         height: 60vh;
-        top: 22vh;
+        top: 10vh;
         align-items: center;
         position: relative;
         display: flex;
@@ -340,4 +341,3 @@
         border-radius: 1em;
     }
 }
-
