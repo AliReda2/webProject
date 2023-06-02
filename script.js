@@ -56,25 +56,27 @@ function search() {
   var i = 0;
   var pics = ["/webProject/images/img2.webp", "/webProject/images/img3.jpg", "/webProject/images/img4.jpg"];
   var el = document.getElementById("pic");
+  let opacity = 0.4;
+  function fadeIn() {
+    if (opacity >= 1) {
+      clearInterval(fadeIn);
+    }
+    el.style.opacity = opacity;
+    opacity += 0.01;
+  } setInterval(fadeIn, 20);
   function toggle() {
     el.src = pics[i];
     i = (i + 1) % pics.length;
+    opacity=0.4;
+    fadeIn();
   }
   setInterval(toggle, 2000);
 })();
 
-(function () {
-  let element = document.getElementById("pic");
-  let opacity = 0.2;
-  function fadeIn() {
-    if (opacity >= 1) {
-      opacity = 0.2;
-    }
-    element.style.opacity = opacity;
-    opacity += 0.01;
-  }
-  setInterval(fadeIn, 26);
-})();
+
+
+
+
 
 let slideIndex = 1;
 showSlides(slideIndex);
