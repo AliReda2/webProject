@@ -7,6 +7,7 @@
 }
 
 @media screen and (min-width:1095px) {
+
     * {
         box-sizing: border-box
     }
@@ -142,18 +143,6 @@
         padding: 0px 15px 0px 0px;
     }
 
-    .row {
-        --bs-gutter-x: 1.5rem;
-        --bs-gutter-y: 0;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: calc(-1 * var(--bs-gutter-y));
-    }
-
-    .mb-4 {
-        margin: 1.5rem !important;
-    }
-
     a {
         text-decoration: none;
     }
@@ -162,12 +151,6 @@
         transition: 0.36s;
         color: #ff4a52;
     }
-
-    /* .popular div a img:hover {
-        padding-top: 0;
-        padding-bottom: 0.1em;
-        transition:all 0.6s;
-    } */
 
     span {
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -356,42 +339,5 @@
         width: 6em;
         border-radius: 1em;
     }
-
-    .wallpapers {
-        position: relative;
-        display: grid;
-        grid-template-rows: 80vh;
-        grid-template-columns: 40vw 40vw;
-        gap: 20vw;
-        justify-items: center;
-    }
-
-    .wallpapers img {
-        width: 20vw;
-        padding: 1em;
-        opacity: 0;
-    }
-
-    .subwallpapers1 {
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-rows: 35vh;
-        justify-items: start;
-    }
-
-    .subwallpapers2 {
-        display: grid;
-        grid-auto-flow: row;
-        grid-template-rows: 35vh;
-        justify-items: end;
-    }
 }
 
-@media only screen and (max-width: 900px) {
-
-    .prev,
-    .next,
-    .text {
-        font-size: 11px
-    }
-}
