@@ -40,6 +40,7 @@
         background-color: #ff4a52;
         border-radius: 10px;
         border-color: #ff4a52;
+        color: white;
     }
 
     .info {
@@ -49,6 +50,20 @@
         position: absolute;
         z-index: 1;
         margin: 11.5vh 0 0 9vw;
+    }
+
+    .info h2,
+    h3 {
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .icons {
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     .form {
@@ -154,9 +169,24 @@
 
 @media screen and (max-width:1095px) {
 
+    .info h2,
+    h3 {
+        color: black;
+        text-align: center;
+        padding: 1em;
+    }
+
+    .icons {
+        padding: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
     .openNav {
         display: block;
     }
+
     .logo img {
         height: 4em;
         padding: 0px 15px 0px 0px;
@@ -193,7 +223,7 @@
         height: 100%;
         width: 0;
         position: fixed;
-        z-index: 1;
+        z-index: 3;
         top: 0;
         right: 0;
         background-color: #111;
@@ -203,12 +233,13 @@
     }
 
     .navBar a {
-        padding: 8px 8px 8px 32px;
+        padding: 20px 0px 20px 10px;
         text-decoration: none;
         font-size: 25px;
         color: #818181;
         display: block;
         transition: 0.3s;
+        text-align: center;
     }
 
     .navBar a:hover {
@@ -218,16 +249,15 @@
     .navBar .closebtn {
         position: absolute;
         top: 0;
-        right: 25px;
+        left: 0;
         font-size: 36px;
-        margin-left: 50px;
     }
 
     .inputs {
-        margin: 27vh 0 0 39vw;
+        margin: 20vh 0 0 4vw;
         position: relative;
         display: grid;
-        grid-template-columns: 25vw 25vw;
+        grid-template-columns: 40vw 40vw;
         z-index: 0;
     }
 
@@ -256,15 +286,16 @@
         background-color: #ff4a52;
         border-radius: 10px;
         border-color: #ff4a52;
+        color: white;
     }
 
     .info {
-        background-color: #ff4a52;
-        width: 27vw;
-        height: 63vh;
+        background-color: goldenrod;
+        width: 100vw;
+        height: 35vh;
         position: absolute;
         z-index: 1;
-        margin: 11.5vh 0 0 9vw;
+        margin: 60vh 0 0 0;
     }
 
     .form {
@@ -276,7 +307,7 @@
         position: absolute;
         z-index: 1;
         color: #111;
-        margin: 15vh 0 0 39vw;
+        margin: 10vh 0 0 5vw;
     }
 
     .back {
@@ -307,9 +338,9 @@
     .center {
         z-index: 1;
         position: absolute;
-        margin: 8vh 0 0 22vw;
-        width: 70vw;
-        height: 70vh;
+        margin: 5vh 0 0 0;
+        width: 80vw;
+        height: 50vh;
         background-color: white;
     }
 
