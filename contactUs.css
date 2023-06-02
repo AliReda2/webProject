@@ -7,10 +7,25 @@
 }
 
 @media screen and (min-width:1095px) {
-    #backgroundImage {
+
+    #pic {
+        opacity: 0;
+    }
+
+    .hover_text {
+        position: absolute;
+        left: 40%;
+        bottom: 0;
+        opacity: 0;
+        color: white;
+        transition: 1000ms all;
+        z-index: 10000;
+    }
+
+    .backgroundImage {
         position: absolute;
         background-repeat: no-repeat;
-        height: 100%;
+        height: 90vh;
         width: 100%;
         background-size: cover;
         background-attachment: fixed;
@@ -37,7 +52,6 @@
 
     a {
         text-decoration: none;
-        padding: 1vw 2vw;
     }
 
     a:hover {
@@ -45,9 +59,14 @@
         color: #ff4a52;
     }
 
+    /* .popular div a img:hover {
+        padding-top: 0;
+        padding-bottom: 0.1em;
+        transition:all 0.6s;
+    } */
+
     span {
-        font-weight: 600;
-        color: #ff4a52;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     }
 
     .divider:after,
@@ -75,6 +94,10 @@
         display: flex;
     }
 
+    .navBar a {
+        padding: 1vw 2vw;
+    }
+
     .navBar .closebtn {
         display: none;
     }
@@ -95,5 +118,167 @@
 
     .navBar div {
         font: normal normal 600 20px/1.4em sans-serif;
+    }
+
+    .header {
+        position: relative;
+        height: 50vh;
+        padding: 1rem 0;
+        display: grid;
+        grid-template-rows: 11vw 4vw;
+        grid-template-columns: 100vw;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .header h1 {
+        text-align: center;
+        font-weight: 300;
+        font-size: 30pt;
+        padding-bottom: 1rem;
+    }
+
+    .header h2 {
+        text-align: center;
+    }
+
+    .header p {
+        font-size: 17px;
+        text-align: justify;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+
+    .inputForms {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: 26vw 20vw 26vw;
+        justify-items: center;
+        box-shadow: none;
+        color: #565656;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 1.2rem;
+        line-height: 1.43;
+    }
+
+    .inputForms input,
+    select {
+        width: 20vw;
+        height: 3.5vw;
+        color: gray;
+        border-radius: 6px;
+        font-size: larger;
+        text-align: center;
+    }
+
+    .inputForms input[type=button] {
+        border-radius: 30px;
+        background-color: #ff4a52;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: large;
+        border-color: #ff4a52
+    }
+
+    .inputForms input[type=text] {
+        border: 1px solid #e8e8e8;
+    }
+
+    .inputForms select option {
+        color: #565656;
+    }
+
+    .popular {
+        height: 60vh;
+        top: 20vh;
+        align-items: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular h1 {
+        padding-bottom: 2em;
+    }
+
+    .popular div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .popular div img {
+        width: 20vw;
+        border-radius: 30px;
+        padding: 1em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        bottom: 0;
+        top: 15em;
+        background-color: black;
+        color: white;
+    }
+
+    footer div {
+        padding: 1em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    footer div div {
+        padding: 1em 3em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer div div img {
+        width: 7em;
+    }
+
+    .recentTrips {
+        display: grid;
+        grid-template-columns: 7em 7em 7em;
+        grid-template-rows: 8em 8em;
+    }
+
+    .recentTrips img {
+        width: 6em;
+        border-radius: 1em;
+    }
+
+    .wallpapers {
+        position: relative;
+        display: grid;
+        grid-template-rows: 80vh;
+        grid-template-columns: 40vw 40vw;
+        gap: 20vw;
+        justify-items: center;
+    }
+
+    .wallpapers img {
+        width: 20vw;
+        padding: 1em;
+        opacity: 0;
+    }
+
+    .subwallpapers1 {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 35vh;
+        justify-items: start;
+    }
+
+    .subwallpapers2 {
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 35vh;
+        justify-items: end;
     }
 }

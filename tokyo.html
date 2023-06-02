@@ -11,8 +11,7 @@
 </head>
 
 <body>
-  <img src="/webProject/images/catcher.jpg" class="backgroundImage">
-  <div class="navBar0">
+  <div class="navBar0" style="background-color: gray;">
     <div class="logo"><img src="/webProject/images/logo.png">Skypiea</div>
     <div class="navBar" id="mySidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -22,14 +21,32 @@
     </div>
     <span class="openNav" onclick="openNav()"><i class="fa-solid fa-bars fa-xl" style="color: #ff4a52;"></i></span>
   </div>
-  <div class="wallpapers">
-    <div class="subwallpapers1"> <img id="cover" src="/webProject/images/img1.jpg">
-      <img id="cover" src="/webProject/images/img1.jpg">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/webProject/images/img1.jpg" style="width:100%">
     </div>
-    <div class="subwallpapers2"> <img id="cover" src="/webProject/images/img1.jpg">
-      <img id="cover" src="/webProject/images/img1.jpg">
+
+    <div class="mySlides fade">
+      <img src="/webProject/images/img2.webp" style="width:100%">
     </div>
+
+    <div class="mySlides fade">
+      <img src="/webProject/images/img3.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
   </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
   <script src="/webProject/script.js"></script>
 </body>
 
