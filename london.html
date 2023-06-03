@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/webProject/style.css">
+  <link rel="stylesheet" href="/webProject/mobile.css">
+  <title>Document</title>
 </head>
+
 <body>
-    <img src="/webProject/images/img1.jpg" class="backgroundImage">
-  <div class="navBar0">
+  <div class="navBar0" style="background-color: black;">
     <div class="logo"><img src="/webProject/images/logo.png">Skypiea</div>
     <div class="navBar" id="mySidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div><a href="/webProject/index.html">Home</a></div>
       <div><a href="/webProject/contactUs.html">Contact Us</a></div>
       <div><a href="/webProject/logIn.html">log in</a></div>
-
     </div>
     <span class="openNav" onclick="openNav()"><i class="fa-solid fa-bars fa-xl" style="color: #ff4a52;"></i></span>
   </div>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img src="/webProject/images/img1.jpg" style="width:100%;height: 40vw;">
+      <p style="color: black;position: absolute;top: 15vw;left: 42vw;font-size: 4vw;">Welcome</p>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/webProject/images/img2.webp" style="width:100%;height: 40vw;">
+      <p style="color: black;position: absolute;top: 15vw;left: 47vw;font-size: 4vw;">to</p>
+    </div>
+
+    <div class="mySlides fade">
+      <img src="/webProject/images/img3.jpg" style="width:100%;height: 40vw;">
+      <p style="color: black;position: absolute;top: 15vw;left: 45vw;font-size: 4vw;">Tokyo</p>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+
   <script src="/webProject/script.js"></script>
   <script src="https://kit.fontawesome.com/41a5db781c.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
