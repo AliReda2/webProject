@@ -74,46 +74,6 @@
     .navBar div {
         font: normal normal 600 20px/1.4em sans-serif;
     }
-
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: relative;
-        bottom: 0;
-        top: 15em;
-        background-color: black;
-        color: white;
-    }
-
-    footer div {
-        padding: 1em;
-        display: flex;
-        flex-direction: row;
-    }
-
-    footer div div {
-        padding: 1em 3em;
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer div div img {
-        width: 7em;
-    }
-
-    .recentTrips {
-        display: grid;
-        grid-template-columns: 7em 7em 7em;
-        grid-template-rows: 8em 8em;
-    }
-
-    .recentTrips img {
-        width: 6em;
-        border-radius: 1em;
-    }
 }
 @media screen and (max-width:1095px){
     .navBar {
@@ -192,42 +152,5 @@
 
     .navBar0 div {
         font: normal normal 600 20px/1.4em sans-serif;
-    }
-    footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        position: relative;
-        bottom: 0;
-        background-color: black;
-        color: white;
-    }
-
-    footer div {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer div div {
-        padding: 1em 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    footer div div img {
-        width: 7em;
-    }
-
-    .recentTrips {
-        display: grid;
-        grid-template-columns: 7em 7em 7em;
-        grid-template-rows: 8em 8em;
-    }
-
-    .recentTrips img {
-        width: 6em;
-        border-radius: 1em;
     }
 }

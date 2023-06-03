@@ -1,7 +1,7 @@
 if (screen.width < 1000) {
   /* Set the width of the side navigation to 250px */
   function openNav() {
-    document.getElementById("mySidenav").style.width = "40vw";
+    document.getElementById("mySidenav").style.width = "44vw";
   }
 
   /* Set the width of the side navigation to 0 */
