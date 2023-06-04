@@ -274,7 +274,7 @@
 
     .inputs input {
         color: #111;
-        width: 70%;
+        width: 80%;
         margin: 0 0 40px 0;
         padding: 0.5em;
         background-color: lightgray;
@@ -343,7 +343,7 @@
         z-index: 1;
         position: absolute;
         margin: 5vh 0 0 0;
-        width: 80vw;
+        width: 85vw;
         height: 50vh;
         background-color: white;
     }
