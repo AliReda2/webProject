@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/webProject/style.css">
   <link rel="stylesheet" href="/webProject/mobile.css">
-  <title>Document</title>
+  <title>Tokyo</title>
 </head>
 
 <body>
@@ -44,12 +44,76 @@
   </div>
   <br>
 
-  <div style="text-align:center">
+  <div style="text-align:center; margin-bottom: 2vw;">
     <span class="dot" onclick="currentSlide(1)"></span>
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+  <div class="hotelCards">
+    <div class="hotel hotel1">
+      <img onmouseover="showContent(this)" onmouseleave="hideContent(this)" src="/webProject/images/popular1.jpg">
+      <div class="hotelInfo">
+        <span>name</span>
+        <span>$999</span>
+      </div>
+      <input onclick="openPopup()" type="button" value="Book">
+    </div>
+    <div class="hotel hotel2">
+      <img onmouseover="showContent(this)" onmouseleave="hideContent(this)" src="/webProject/images/popular1.jpg">
+      <div id="hotelInfo" class="hotelInfo">
+        <span>name</span>
+        <span>$999</span>
+      </div>
+      <input onclick="openPopup()" type="button" value="Book">
+    </div>
+    <div id="popup" class="booking">
+      <div class="bookingInputs">
+        <div><span>nb of days</span>
+          <select>
+            <option value="">1-5</option>
+            <option value="">5-10</option>
+            <option value="">10+</option>
+          </select>
+        </div>
+        <div><span>budget</span>
+          <select>
+            <option value="">10$-50$</option>
+            <option value="">50$-100$</option>
+            <option value="">100$+</option>
+          </select>
+        </div>
+      </div>
+      <input onclick="goTo()" type="button" value="submit">
+      <div onclick="closePopup()" class="icon"><i class="fa-solid fa-xmark fa-xl"></i></div>
 
+    </div>
+  </div>
+  <footer style="top: 50vw;">
+    <div>
+      <div>
+        <h2>Company Info</h2>
+        <h3>Travel is a sharp turn in life</h3>
+        <img src="/webProject/images/logo.png">
+      </div>
+      <div>
+        <h2>Contacts</h2>
+        <h3>phone number</h3>
+        <h3>Location</h3>
+        <h3>time</h3>
+      </div>
+      <div>
+        <h2>Recent Trips</h2>
+        <div class="recentTrips"><img src="/webProject/images/popular1.jpg">
+          <img src="/webProject/images/popular2.jpg">
+          <img src="/webProject/images/popular3.jpg">
+          <img src="/webProject/images/p.jpg">
+          <img src="/webProject/images/popular2.jpg">
+          <img src="/webProject/images/popular1.jpg">
+        </div>
+      </div>
+    </div>
+    <div>Copyright &copy; Ali Reda</div>
+  </footer>
   <script src="/webProject/script.js"></script>
   <script src="https://kit.fontawesome.com/41a5db781c.js" crossorigin="anonymous"></script>
 </body>

@@ -340,4 +340,116 @@
         width: 6em;
         border-radius: 1em;
     }
+
+    .hotelCards {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        column-gap: 10vw;
+        justify-content: center;
+    }
+
+    .hotel {
+        position: relative;
+    }
+
+    .hotel input {
+        opacity: 0;
+        background-color: #565656;
+        width: 7em;
+        border-radius: 10px;
+        color: #ff4a52;
+        border-color: #ff4a52;
+        position: absolute;
+        padding: 0.5em;
+        top: 20vw;
+        left: 15vw;
+        font-size: large;
+        font-weight: 600;
+    }
+
+    .hotel img {
+        position: absolute;
+        z-index: 0;
+        width: 100%;
+        border-radius: 35px;
+    }
+
+    .hotelInfo {
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    .hotelInfo span {
+        position: absolute;
+        font-size: 2em;
+        color: #ff4a52;
+    }
+
+    .hotelInfo span:nth-child(1) {
+        top: 3vw;
+        left: 30vw;
+    }
+
+    .hotelInfo span:nth-child(2) {
+        position: absolute;
+        bottom: -40vw;
+        left: 3vw;
+    }
+
+    .booking {
+        visibility: hidden;
+        background-color: #ff9ca1;
+        width: 45vw;
+        height: 45vh;
+        position: fixed;
+        top: 10vh;
+        left: 27vw;
+        z-index: 5;
+        display: grid;
+        justify-items: center;
+    }
+
+    .booking input[value=submit] {
+        padding: 1em;
+        border-radius: 25px;
+        width: 10rem;
+        height: 4em;
+        background: #717171;
+        font-size: 1em;
+    }
+
+    .icon {
+        color: black;
+        position: absolute;
+        right: 1vw;
+        font-size: 2em;
+        border: none;
+        background: transparent;
+        top: 1vh;
+    }
+
+    .bookingInputs {
+        display: flex;
+    }
+
+    .bookingInputs div {
+        display: grid;
+        grid-auto-flow: row;
+        width: 100%;
+        justify-items: center;
+        align-content: space-evenly;
+    }
+
+    .bookingInputs div span {
+        font-size: 2em;
+        color: black;
+    }
+
+    .bookingInputs div select {
+        color: black;
+    }
+    .bookingInputs div select option {
+        color: black;
+    }
 }

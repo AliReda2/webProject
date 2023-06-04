@@ -10,6 +10,23 @@ if (screen.width < 1000) {
   }
 }
 if (screen.width > 1000) {
+  function showContent(elem) {
+    var content = elem.nextElementSibling;
+    var input = content.nextSibling.nextSibling;
+    input.style.opacity = "1";
+    input.style.transition = "all 500ms";
+    content.style.opacity = "1";
+    content.style.transition = "all 500ms";
+  }
+  function hideContent(elem) {
+    var content = elem.nextElementSibling;
+    var input = content.nextSibling.nextSibling;
+    input.style.opacity = "0";
+    input.style.transition = "all 500ms";
+    content.style.opacity = "0";
+    content.style.transition = "all 500ms";
+  }
+  
   (function () {
     var i = 0;
     var pics = ["/webProject/images/img2.webp", "/webProject/images/img3.jpg", "/webProject/images/img4.jpg"];
@@ -101,15 +118,32 @@ function formText(elem) {
   span.style.transition = "all 500ms";
   elem.style.transition = "all 500ms";
   span.style.bottom = "5em";
-  elem.style.backgroundColor="white";
+  elem.style.backgroundColor = "white";
 }
 function checkNull(elem) {
   var span = elem.nextSibling;
   span.style.transition = "all 500ms";
-  if(elem.value==""){
+  if (elem.value == "") {
     span.style.bottom = "3em";
-    elem.style.backgroundColor="lightgrey";
+    elem.style.backgroundColor = "lightgrey";
   }
   console.log(elem.value)
 }
-setInterval(checkNull,10);
+setInterval(checkNull, 10);
+
+function openPopup() {
+  let popup = document.getElementById("popup");
+  document.body.style.backgroundColor = "grey";
+  document.body.style.transition = "all 500ms";
+  popup.style.visibility = "visible";
+}
+function closePopup() {
+  let popup = document.getElementById("popup");
+  document.body.style.backgroundColor = "white";
+  document.body.style.transition = "all 500ms";
+  popup.style.visibility = "hidden";
+}
+
+function goTo() {
+  location.href = "https://www.google.com/maps/place/All+Day+Place+Shibuya/data=!4m10!3m9!1s0x60188ca790fe7323:0xb79cf267239df9bb!5m2!4m1!1i2!8m2!3d35.661448!4d139.703109!16s%2Fg%2F11s1bcqgzt!19sChIJI3P-kKeMGGARu_mdI2fynLc?authuser=0&hl=en&rclk=1";
+}
