@@ -8,24 +8,9 @@ if (screen.width < 1000) {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
-  function showContent(elem) {
-    var content = elem.nextElementSibling;
-    var input = content.nextSibling.nextSibling;
-    input.style.opacity = "1";
-    input.style.transition = "all 500ms";
-    content.style.opacity = "1";
-    content.style.transition = "all 500ms";
-  }
 }
 if (screen.width > 1000) {
-  function showContent(elem) {
-    var content = elem.nextElementSibling;
-    var input = content.nextSibling.nextSibling;
-    input.style.opacity = "1";
-    input.style.transition = "all 500ms";
-    content.style.opacity = "1";
-    content.style.transition = "all 500ms";
-  }
+
 
   (function () {
     var i = 0;
@@ -153,5 +138,13 @@ function hideContent(elem) {
   input.style.opacity = "0";
   input.style.transition = "all 500ms";
   content.style.opacity = "0";
+  content.style.transition = "all 500ms";
+}
+function showContent(elem) {
+  var content = elem.nextElementSibling;
+  var input = content.nextSibling.nextSibling;
+  input.style.opacity = "1";
+  input.style.transition = "all 500ms";
+  content.style.opacity = "1";
   content.style.transition = "all 500ms";
 }
