@@ -10,8 +10,6 @@ if (screen.width < 1000) {
   }
 }
 if (screen.width > 1000) {
-
-
   (function () {
     var i = 0;
     var pics = ["/webProject/images/img2.webp", "/webProject/images/img3.jpg", "/webProject/images/img4.jpg"];
@@ -68,7 +66,6 @@ function search() {
   else {
     alert("not available");
   }
-
 }
 
 let slideIndex = 1;
