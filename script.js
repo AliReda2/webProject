@@ -8,6 +8,14 @@ if (screen.width < 1000) {
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
   }
+  function showContent(elem) {
+    var content = elem.nextElementSibling;
+    var input = content.nextSibling.nextSibling;
+    input.style.opacity = "1";
+    input.style.transition = "all 500ms";
+    content.style.opacity = "1";
+    content.style.transition = "all 500ms";
+  }
 }
 if (screen.width > 1000) {
   function showContent(elem) {
@@ -18,15 +26,7 @@ if (screen.width > 1000) {
     content.style.opacity = "1";
     content.style.transition = "all 500ms";
   }
-  function hideContent(elem) {
-    var content = elem.nextElementSibling;
-    var input = content.nextSibling.nextSibling;
-    input.style.opacity = "0";
-    input.style.transition = "all 500ms";
-    content.style.opacity = "0";
-    content.style.transition = "all 500ms";
-  }
-  
+
   (function () {
     var i = 0;
     var pics = ["/webProject/images/img2.webp", "/webProject/images/img3.jpg", "/webProject/images/img4.jpg"];
@@ -146,4 +146,12 @@ function closePopup() {
 
 function goTo() {
   location.href = "https://www.google.com/maps/place/All+Day+Place+Shibuya/data=!4m10!3m9!1s0x60188ca790fe7323:0xb79cf267239df9bb!5m2!4m1!1i2!8m2!3d35.661448!4d139.703109!16s%2Fg%2F11s1bcqgzt!19sChIJI3P-kKeMGGARu_mdI2fynLc?authuser=0&hl=en&rclk=1";
+}
+function hideContent(elem) {
+  var content = elem.nextElementSibling;
+  var input = content.nextSibling.nextSibling;
+  input.style.opacity = "0";
+  input.style.transition = "all 500ms";
+  content.style.opacity = "0";
+  content.style.transition = "all 500ms";
 }
